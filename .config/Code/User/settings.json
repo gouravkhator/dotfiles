@@ -17,5 +17,6 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Simple Dark"
 }
