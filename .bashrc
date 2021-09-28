@@ -145,6 +145,6 @@ ex ()
   fi
 }
 
-# Fetch Master 6000
-/usr/local/bin/fm6000
+# Fetch Master 6000: https://github.com/anhsirk0/fetch-master-6000
+/usr/local/bin/fm6000 -r
 
