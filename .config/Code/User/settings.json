@@ -2,30 +2,60 @@
   "terminal.integrated.fontSize": 19,
   "editor.fontSize": 20,
   "workbench.startupEditor": "none",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.colorTheme": "Simple Dark",
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
   "explorer.confirmDelete": false,
-  "solidity.defaultCompiler": "localFile",
-  "liveServer.settings.donotShowInfoMsg": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+  "editor.formatOnSave": false,
   "window.zoomLevel": 1,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false
+  "editor.tabSize": 2,
+  "telemetry.telemetryLevel": "off",
+  "workbench.colorTheme": "Visual Studio Dark",
+
+  /*
+  - Download `Fira Code` and `Cascadia Code` fonts from github on your machine, to have them working
+  - If the Fira Code font is not present in ur system, then it looks for Cascadia Code fonts.
+  and if that is also not found, then it uses `monospace` font for the displaying.
+  - Font Ligatures only work for `Fira Code` or `Cascadia Code`.
+  */
+  "editor.fontFamily": "'Fira Code', 'Cascadia Code', monospace",
+  "editor.fontLigatures": true
+
+  // ---For jupyter notebooks workflow in VS Code, uncomment the below:---
+  // "workbench.editorAssociations": {
+  //   "*.ipynb": "jupyter-notebook"
+  // },
+  // "notebook.cellToolbarLocation": {
+  //   "default": "right",
+  //   "jupyter-notebook": "left"
+  // },
+
+  // ---Using `ritwickdey.LiveServer` extension, then uncomment below:---
+  // "liveServer.settings.donotShowInfoMsg": true,
+
+  // ---When using any extension for Solidity Compilers, then uncomment below:---
+  // "solidity.defaultCompiler": "localFile",
+
+  // ---When using `esbenp.prettier-vscode` extension, then uncomment below:---
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // ---When using `mwpb.java-prettier-formatter` extension, then uncomment below---
+  // "[java]": {
+  //   "editor.defaultFormatter": "mwpb.java-prettier-formatter"
+  // },
+
+  // ---When using `rust-lang.rust-analyzer` extension, then uncomment below---
+  // "[rust]": {
+  //   "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  // },
+
+  // ---When using `shd101wyy.markdown-preview-enhanced` extension, then uncomment below---
+  // "markdown-preview-enhanced.previewTheme": "atom-dark.css"
 }
