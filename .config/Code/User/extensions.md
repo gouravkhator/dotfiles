@@ -90,7 +90,9 @@ shd101wyy.markdown-preview-enhanced
 - `JuanBlanco.solidity`: Solidity syntax highlighting, snippets suggestion etc.
 - `shd101wyy.markdown-preview-enhanced`: Markdown Preview Enhanced in VSCode
 
-## Current List of Extensions
+## Current List of Extensions I Use 
+
+Below are the list of extensions I use, as on ***7th July, 2022***.
 
 ```
 aaron-bond.better-comments
