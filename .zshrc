@@ -1,8 +1,17 @@
+################################################################################
+# ------------------------Main Zsh and Oh-My-ZSH Configs------------------------
+################################################################################
+
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# Checks if oh-my-zsh is installed or not, and if not, runs the oh-my-zsh install script
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -74,7 +83,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+################################################################################
+# ------------------------User Configuration and Aliases------------------------
+################################################################################
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -99,3 +110,28 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# alias for alacritty set by me, as alacritty on wayland was showing weird bordered windows
+alias alacritty="env -u WAYLAND_DISPLAY alacritty"
+
+##########################################################################################
+# ----------------Load in the nvm environment for Node Version management-----------------
+##########################################################################################
+ 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+##########################################################################################
+# -----Load in the cargo packages and binaries for Rust applications and CLI packages-----
+##########################################################################################
+
+# affix colons on either side of $PATH to simplify matching
+case ":${PATH}:" in
+    *:"$HOME/.cargo/bin":*)
+        ;;
+    *)
+        # Prepending path in case a system-installed rustc needs to be overridden
+        export PATH="$HOME/.cargo/bin:$PATH"
+        ;;
+esac
