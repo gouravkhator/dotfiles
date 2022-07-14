@@ -17,7 +17,14 @@
   "window.zoomLevel": 1,
   "editor.tabSize": 2,
   "telemetry.telemetryLevel": "off",
-  "workbench.colorTheme": "Visual Studio Dark",
+
+  /*
+  - This theme is dependent on must-have extension: "GitHub.github-vscode-theme"
+  - If you prefer not installing the extension or if the extension is not present at the time you tried to download,
+    then edit the below field as mentioned here:
+    "workbench.colorTheme": "Visual Studio Dark"
+  */
+  "workbench.colorTheme": "GitHub Dark Default",
 
   /*
   - Download `Fira Code` and `Cascadia Code` fonts from github on your machine, to have them working

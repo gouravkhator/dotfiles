@@ -2,12 +2,13 @@
 
 Run the command `code --list-extensions` and we get a list of extensions installed in our VSCode.
 
-## Necessary Extensions
+## Must-Have Extensions
 
 ```
 aaron-bond.better-comments
 patbenatar.advanced-new-file
 esbenp.prettier-vscode
+GitHub.github-vscode-theme
 ```
 
 ## Other Language/Framework Specific Extensions
@@ -76,6 +77,7 @@ shd101wyy.markdown-preview-enhanced
   > Note: Prettier extension does not work for some specific file formats, including Java and Rust. 
   - That is why, instead of this extension, we use different extensions for Java and Rust. 
   - And thus for Java/Rust, we don't need to install this extension separately.
+- `GitHub.github-vscode-theme`: Best set of themes for me.
 - `redhat.java`: Redhat Java provides intellisense, autocompletion, linting, and many more features including Java files formatting and prettifying, but the Redhat version of prettifying has various bugs, so we use `mwpb.java-prettier-formatter` for the formatting of Java files.
   - `mwpb.java-prettier-formatter` does not depend on `redhat.java` extension, and can work independently for just the formatting of Java files.
 - `mwpb.java-prettier-formatter`: Java Prettier formatter extension.
@@ -92,11 +94,12 @@ shd101wyy.markdown-preview-enhanced
 
 ## Current List of Extensions I Use 
 
-Below are the list of extensions I use, as on ***7th July, 2022***.
+Below are the list of extensions I use, as on ***14th July, 2022***.
 
 ```
 aaron-bond.better-comments
 esbenp.prettier-vscode
+GitHub.github-vscode-theme
 mwpb.java-prettier-formatter
 patbenatar.advanced-new-file
 redhat.java
