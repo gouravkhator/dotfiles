@@ -113,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 
 # alias for alacritty set by me, as alacritty on wayland was showing weird bordered windows
 alias alacritty="env -u WAYLAND_DISPLAY alacritty"
+alias ll="ls -alh"
 
 ##########################################################################################
 # ----------------Load in the nvm environment for Node Version management-----------------
