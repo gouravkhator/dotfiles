@@ -2,7 +2,12 @@
 # ------------------------Main Zsh Configs (Without Oh-My-ZSH)------------------
 ################################################################################
 
-PROMPT='%(?.%F{051}✓.%F{red}✕)%f %B%F{222}%1~%f%b '
+# the codes given in the curly braces are the color codes
+# these color codes can be found in this link: https://unix.stackexchange.com/a/124409
+
+PROMPT='%(?.%F{159}➻.%F{red}✕)%f %B%F{222}%1~%f%b %F{247}➦%f '
+
+# right side prompt for a shell..
 RPROMPT='%F{189}%*'
 
 #################################################################################
