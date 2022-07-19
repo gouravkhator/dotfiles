@@ -1,5 +1,5 @@
 ################################################################################
-# ------------------------Main Zsh and Oh-My-ZSH Configs------------------------
+# ------------------------Main Zsh with Oh-My-ZSH Configs------------------------
 ################################################################################
 
 # If you come from bash you might have to change your $PATH.
@@ -74,12 +74,18 @@ ZSH_THEME="robbyrussell"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# lazy load the NVM virtual environment, so as to speed up the shell startup time..
+# NOTE: this NVM_LAZY_LOAD and NVM_COMPLETION lines should be before the `plugins` line, as `zsh-nvm` plugin requires this 
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# Check out this article for speeding up slow zsh: https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load/
+plugins=(git zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,14 +124,14 @@ alias ll="ls -alh"
 ##########################################################################################
 # ----------------Load in the nvm environment for Node Version management-----------------
 ##########################################################################################
- 
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-##########################################################################################
-# -----Load in the cargo packages and binaries for Rust applications and CLI packages-----
-##########################################################################################
+#######################################################################################################
+# -----Add the cargo packages and binaries in PATH variable for Rust applications and CLI packages-----
+#######################################################################################################
 
 # affix colons on either side of $PATH to simplify matching
 case ":${PATH}:" in
