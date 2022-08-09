@@ -16,3 +16,7 @@ A config file repo like many other repos, not too deep but copied, customised an
 ## Configs to add in future..
 
 - Rofi - A program launcher
+
+## Other Notes
+
+- Updated shell aliases are present mostly on this .zshrc file only..

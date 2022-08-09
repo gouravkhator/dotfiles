@@ -2,6 +2,7 @@
   "terminal.integrated.fontSize": 19,
   "editor.fontSize": 20,
   "workbench.startupEditor": "none",
+  "window.zoomLevel": 1,
   "editor.suggestSelection": "first",
   "files.exclude": {
     "**/.classpath": true,
@@ -14,9 +15,9 @@
   "explorer.confirmDelete": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.formatOnSave": false,
-  "window.zoomLevel": 1,
   "editor.tabSize": 2,
   "telemetry.telemetryLevel": "off",
+  "security.workspace.trust.untrustedFiles": "open",
 
   /*
   - This theme is dependent on must-have extension: "GitHub.github-vscode-theme"
@@ -62,6 +63,11 @@
   // "[rust]": {
   //   "editor.defaultFormatter": "rust-lang.rust-analyzer"
   // },
+
+  // ---When using `rust-lang.rust-analyzer` extension, then uncomment below---
+
+  // if you want to disable some diagnostics like `inactive-code` feature etc., then only uncomment the below
+  // "rust-analyzer.diagnostics.disabled": ["inactive-code"],
 
   // ---When using `shd101wyy.markdown-preview-enhanced` extension, then uncomment below---
   // "markdown-preview-enhanced.previewTheme": "atom-dark.css"

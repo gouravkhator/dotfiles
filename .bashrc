@@ -78,7 +78,7 @@ if ${use_color} ; then
 	alias ls='ls --color=auto'
 
 	# Gourav : added exa and ll aliases for ls
-	alias ls='exa -la --color=always --group-directories-first'
+	alias ls='exa -alF --color=always --group-directories-first --sort=oldest'
 	alias ll='ls'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
